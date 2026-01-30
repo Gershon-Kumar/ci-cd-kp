@@ -12,12 +12,11 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ./scripts
+        working-directory: ./gradle-test
 
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-java@v5
-        working-directory: ./gradle-test
         with:
           distribution: "temurin"
           java-version: "17"
